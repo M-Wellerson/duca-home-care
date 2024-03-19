@@ -54,6 +54,56 @@ export default function Home() {
                         Saiba mais
                     </a>
                 </section>
+
+                <section className="w-full flex grid grid-cols-2 relative justify justify-items-center mt-[55px]">
+                    <img src="/bolinha.svg" alt="banner" className="w-full h-full object-cover object-center rounded-md absolute" />
+                    <img src="/homecare.jpg" alt="banner" className="w-full h-[400px] object-cover object-center rounded-md z-10" />
+                    <div className="w-full md:w-3/4 flex flex-col justify-center items-center mt-5 z-10">
+                        <h2 className="text-4xl font-bold text-[#255650]">
+                            Serviços
+                        </h2>
+                        <p className="text-center text-lg mt-5 text-[#255650]">
+                            A Homecare é uma empresa que atua no segmento de saúde domiciliar, oferecendo serviços de alta qualidade e tecnologia para pacientes que necessitam de cuidados especiais.
+                        </p>
+                    </div>
+                </section>
+
+                <section className="w-full grid grid-cols-2 relative justify justify-items-center mt-[55px]">
+                    <div className="w-full md:w-3/4 flex flex-col justify-center items-center mt-5 z-10">
+                        <h2 className="text-4xl font-bold text-[#255650]">
+                            Serviços
+                        </h2>
+                        <p className="text-center text-lg mt-5 text-[#255650]">
+                            A Homecare oferece serviços de alta qualidade e tecnologia para pacientes que necessitam de cuidados especiais.
+                        </p>
+                    </div>
+                    <img src="/bolinha.svg" alt="banner" className="w-full h-full object-cover object-center rounded-md absolute" />
+                    <img src="/homecare.jpg" alt="banner" className="w-full h-[400px] object-cover object-center rounded-md z-10" />
+                </section>
+
+                <section className="w-full p-10 h-[400px] mt-[55px] bg-[#255650] rounded-md">
+                    <h2 className="text-4xl font-bold text-[#F2DAD0]">Serviços</h2>
+                    <div className="grid grid-cols-3 gap-4">
+                        <div className="w-full flex flex-col justify-center mt-5">
+                            <h3 className="text-2xl font-bold text-[#F2DAD0]">Lorem Ipsum Dolor sit amet</h3>
+                            <p className="text-lg mt-5 text-[#F2DAD0]">
+                                A Homecare oferece serviços de alta qualidade e tecnologia para pacientes que necessitam de cuidados especiais.
+                            </p>
+                        </div>
+                        <div className="w-full flex flex-col justify-center mt-5">
+                            <h3 className="text-2xl font-bold text-[#F2DAD0]">Lorem Ipsum Dolor sit amet</h3>
+                            <p className="text-lg mt-5 text-[#F2DAD0]">
+                                A Homecare oferece serviços de alta qualidade e tecnologia para pacientes que necessitam de cuidados especiais.
+                            </p>
+                        </div>
+                        <div className="w-full flex flex-col justify-center mt-5">
+                            <h3 className="text-2xl font-bold text-[#F2DAD0]">Lorem Ipsum Dolor sit amet</h3>
+                            <p className="text-lg mt-5 text-[#F2DAD0]">
+                                A Homecare oferece serviços de alta qualidade e tecnologia para pacientes que necessitam de cuidados especiais.
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </main>
         </>
     );
