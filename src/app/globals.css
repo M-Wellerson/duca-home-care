@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -76,4 +77,10 @@ li {
 .header-bg {
   backdrop-filter: blur(12px);
   background: rgba(255,255,255, 0.2);
+}
+
+.noise:hover {
+  background: linear-gradient(to right, #F2DAD0, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+  border: #fff 1px solid;
+  color: #255650;
 }
