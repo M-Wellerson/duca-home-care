@@ -4,10 +4,16 @@ import LinkMenu from "@/components/link-menu";
 import MenuMobile from "@/components/menu-mobile";
 import Image from "next/image";
 import Link from "next/link";
+import TestimonialCarousel from '@/components/testimonial-carousel';
 
 export default function Home() {
+    const testimonials = [
+        { text: 'Estou muito satisfeito com os serviços da Homecare. Eles oferecem cuidados de saúde excepcionais em casa.', name: 'João' },
+        { text: 'Recomendo fortemente a Homecare. Eles têm uma equipe profissional e atenciosa.', name: 'Maria' },
+        { text: 'Estou impressionado com a qualidade dos serviços da Homecare. Eles realmente se importam com o bem-estar dos pacientes.', name: 'Pedro' }
+    ];
     return (
-        <>
+        <div className="header-bg">
             <header className="container mx-auto">
                 <nav className="py-4">
                     <div className="max-w-full mx-auto flex justify-between items-center">
@@ -27,7 +33,6 @@ export default function Home() {
                             <div className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
 
                                 <LinkMenu href="/" text="Home" />
-                                <LinkMenu href="/" text="Unidades" />
                                 <LinkMenu href="/" text="Serviços" />
                                 <LinkMenu href="/" text="Contatos" />
                                 <LinkMenu href="/" text="Sobre nós" />
@@ -40,7 +45,7 @@ export default function Home() {
             </header>
 
             <main className="container mx-auto">
-                <section className="w-full h-[720px] bg-center bg-[url('../../public/banner.jpg')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center rounded-md shadow">
+                <section  className="w-full h-[720px] bg-center bg-[url('../../public/banner.jpg')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center rounded-md shadow">
                     <h1 className="text-center text-6xl font-extrabold text-[#255650]">
                         Homecare
                     </h1>
@@ -53,6 +58,21 @@ export default function Home() {
                         </svg>
                         Saiba mais
                     </a>
+                </section>
+
+                <section className=" w-full flex grid grid-cols-1 relative justify justify-items-center mt-[55px]">
+                    <img src="/bolinha.svg" alt="banner" className="w-[500px] h-[500px] absolute bottom-0 -z-10" />
+                    <div className="grid grid-cols-1 justify justify-items-center z-10 pt-5">
+                        <h2 className="text-4xl font-bold text-[#255650]">
+                            Depoimentos
+                        </h2>
+                        <p className="text-center text-lg mt-5 text-[#255650]">
+                            Veja o que nossos clientes estão dizendo sobre nós.
+                        </p>
+                        <div className="container mx-auto">
+                            <TestimonialCarousel testimonials={testimonials} />
+                        </div>
+                    </div>
                 </section>
 
                 <section className="w-full flex grid grid-cols-2 relative justify justify-items-center mt-[55px]">
@@ -105,6 +125,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-        </>
+        </div>
     );
 }
