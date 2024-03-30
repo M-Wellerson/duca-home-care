@@ -31,9 +31,9 @@ export default function Home() {
             <main className="mx-auto">
                 <HeroSection />
 
-                <section className="w-full flex grid sm:grid-cols-2 grid-cols-1 relative justify justify-items-center mt-[55px]">
-                    <img src="/bolinha.svg" alt="banner" className="w-full h-full object-cover object-center rounded-md absolute" />
-                    <img src="/homecare.jpg" alt="banner" className="w-full h-[400px] object-cover object-center rounded-md z-10" />
+                <section className="w-full flex grid sm:grid-cols-2 grid-cols-1 relative justify justify-items-center sm:mt-[55px] mt-[35px]">
+                    <img src="/bolinha.svg" alt="banner" className="w-[700px] h-[700px] absolute sm:bottom-[-100px] bottom-20 right-40 -z-10" />
+                    <img src="/homecare.jpg" alt="banner" className="w-full h-[400px] object-cover object-center rounded-md z-10 sm:order-first order-last sm:mt-0 mt-5" />
                     <div className="w-full md:w-3/4 flex flex-col justify-center items-center mt-5 z-10">
                         <h2 className="text-4xl font-bold text-[#255650]">
                             Serviços
@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="w-full grid sm:grid-cols-2 grid-cols-1 relative justify justify-items-center mt-[55px]">
+                <section className="w-full grid sm:grid-cols-2 grid-cols-1 relative justify justify-items-center sm:mt-[55px] mt-[35px]">
                     <div className="w-full md:w-3/4 flex flex-col justify-center items-center mt-5 z-10">
                         <h2 className="text-4xl font-bold text-[#255650]">
                             Serviços
@@ -53,8 +53,8 @@ export default function Home() {
                             A Homecare oferece serviços de alta qualidade e tecnologia para pacientes que necessitam de cuidados especiais.
                         </p>
                     </div>
-                    <img src="/bolinha.svg" alt="banner" className="w-full h-full object-cover object-center rounded-md absolute" />
-                    <img src="/homecare.jpg" alt="banner" className="w-full h-[400px] object-cover object-center rounded-md z-10" />
+                    <img src="/bolinha.svg" alt="banner" className="w-[700px] h-[700px] absolute sm:bottom-[-100px] bottom-20 left-40 -z-10" />
+                    <img src="/homecare.jpg" alt="banner" className="w-full h-[400px] object-cover object-center rounded-md z-10 sm:mt-0 mt-5" />
                 </section>
 
                 <section className="w-full p-10 sm:h-[400px] h-full mt-[55px] bg-[#255650] rounded-md">
