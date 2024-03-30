@@ -4,83 +4,103 @@
 
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 .link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-  background-size: 0 1px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size .5s ease-in-out;
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
 }
 
 .link-underline-black {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#255650, #255650);
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#255650, #255650);
 }
 
 .link-underline:hover {
-  background-size: 100% 1px;
-  background-position: 0 100%;
+    background-size: 100% 1px;
+    background-position: 0 100%;
 }
 
 .background-menu-mobile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  background: #F2DAD0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #F2DAD0;
 }
 
 ul {
-  padding: 25px;
-  position: absolute;
-  top: 100px;
-  right: 0;
-  width: 230px;
+    padding: 25px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 230px;
 }
 
 li {
-  list-style: none;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .body-info-slider {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .header-bg {
-  backdrop-filter: blur(12px);
-  background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .noise:hover {
-  background: linear-gradient(to right, #F2DAD0, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
-  border: #fff 1px solid;
-  color: #255650;
+    background: linear-gradient(to right, #F2DAD0, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+    border: #fff 1px solid;
+    color: #255650;
+}
+
+.bg-hero-section {
+    animation: slideRight 1s forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        background: linear-gradient(to right, #F2DAD0 50%, rgb(0, 0, 0, 0) 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .4s ease-out;
+    }
+
+    100% {
+        background: linear-gradient(to right, #F2DAD0 50%, rgb(0, 0, 0, 0) 50%);
+        background-size: 200% 100%;
+        background-position: left bottom;
+        transition: all .4s ease-out;
+    }
 }
