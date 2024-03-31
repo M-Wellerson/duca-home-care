@@ -18,5 +18,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@codaworks/react-glow/tailwind')
+  ]
 };

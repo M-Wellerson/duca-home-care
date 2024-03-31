@@ -79,12 +79,6 @@ li {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.noise:hover {
-    background: linear-gradient(to right, #F2DAD0, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
-    border: #fff 1px solid;
-    color: #255650;
-}
-
 .bg-hero-section {
     animation: slideRight 1s forwards;
 }
@@ -103,4 +97,14 @@ li {
         background-position: left bottom;
         transition: all .4s ease-out;
     }
+}
+
+.text-text-secondary {
+    color: rgb(154 154 154 / 1);
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
 }
